@@ -25,11 +25,11 @@ public class Menu : MonoBehaviour
         if (isFading) return;
         loadSceneButton.interactable = false;
         isFading = true;
-        StartCoroutine(fadeCour(sceneName)); 
+        StartCoroutine(FadeCourutine(sceneName)); 
     }
 
 
-    IEnumerator fadeCour(string sceneName)
+    IEnumerator FadeCourutine(string sceneName)
     {
         float timer = 0f;
 
